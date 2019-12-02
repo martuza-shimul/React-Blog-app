@@ -8,7 +8,7 @@ const ProjectSummary = ({ project }) => {
 				<p>
 					Posted by {project.authorFirstName} {project.authorLastName}
 				</p>
-				<p className="grey-text">3rd November, 6pm</p>
+				<p className="grey-text">{project.createdAt.toDate().toString()}</p>
 			</div>
 		</div>
 	);
